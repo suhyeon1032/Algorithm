@@ -1,6 +1,6 @@
 class Solution {
     public int solution(int[] arr, int idx) {
-        int answer = 0;
+        int answer = -1;
         
         for(int i = idx; i < arr.length; i++) {
             if (arr[i] == 1) {
@@ -9,6 +9,6 @@ class Solution {
             }
         }
         
-        return (answer == 0) && (idx != 0) ? -1 : answer;
+        return answer;
     }
 }
